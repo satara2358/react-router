@@ -1,0 +1,4 @@
+npm create vite@latest react-router
+npm install
+npm run dev
+npm install path-to-regexp -E

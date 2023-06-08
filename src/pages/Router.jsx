@@ -30,7 +30,7 @@ export function Router ({ children, routes = [], defauldComponent: DefaulCom=() 
 
   })
   
-  const routreToUse = routes.concat(routerFromChildren)
+  const routreToUse = routes.concat(routerFromChildren).filter(Boolean)
   const Page = routreToUse.find(({ path }) => {
     if(path === current) return true
 
